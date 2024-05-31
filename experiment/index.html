@@ -12,6 +12,7 @@
             rel="stylesheet"
             type="text/css"
         />
+        <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe@0.3"></script>
     </head>
     <body></body>
     <script>
@@ -901,14 +902,14 @@
             button_label: "Finish",
         }
 
-        // Save data via DataPipe
-        timeline.push({
-            type: jsPsychPipe,
-            action: "save",
-            experiment_id: "U7CcBlVwxMiy", // This in generated in the DataPipe interface
-            filename: `${jsPsych.randomization.randomID(10)}.csv`,
-            data_string: () => jsPsych.data.get().csv(),
-        })
+        // // Save data via DataPipe
+        // timeline.push({
+        //     type: jsPsychPipe,
+        //     action: "save",
+        //     experiment_id: "U7CcBlVwxMiy", // This in generated in the DataPipe interface
+        //     filename: `${jsPsych.randomization.randomID(10)}.csv`,
+        //     data_string: () => jsPsych.data.get().csv(),
+        // })
 
         jsPsych.run(timeline)
     </script>
