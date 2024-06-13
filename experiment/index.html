@@ -7,11 +7,7 @@
         <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response"></script>
         <script src="https://unpkg.com/@jspsych/plugin-survey-multi-choice"></script>
         <script src="https://unpkg.com/@jspsych/plugin-survey-likert"></script>
-        <link
-            href="https://unpkg.com/jspsych/css/jspsych.css"
-            rel="stylesheet"
-            type="text/css"
-        />
+        <link href="https://unpkg.com/jspsych/css/jspsych.css" rel="stylesheet" type="text/css" />
         <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe@0.3"></script>
     </head>
     <body></body>
@@ -55,20 +51,8 @@
             data: { screen: "consent" },
         }
         timeline.push(demographics_consent)
-        // var consent_form = {
-        //     type: jsPsychHtmlButtonResponse,
-        //     stimulus:
-        //         "<p>By participating in this study, you agree to the following:</p>" +
-        //         "<p>- You are at least 18 years old.</p>" +
-        //         "<p>- Participation is voluntary and you can withdraw at any time.</p>" +
-        //         "<p>- Your responses will be kept confidential and anonymous.</p>" +
-        //         "<p>- The study involves watching videos and completing questionnaires.</p>" +
-        //         '<p>Please click "I agree" to proceed.</p>',
-        //     choices: ["I agree"],
-        //     post_trial_gap: 500,
-        // }
 
-        //var demographic_questionnaire = {
+        var demographic_questionnaire = {
             type: jsPsychSurveyMultiChoice,
             data: { screen: "demographic_questions" },
             questions: [
@@ -101,14 +85,17 @@
                 },
             ],
         }
-        timeline.push(demographic_questionnaire)
+        // timeline.push(demographic_questionnaire)
 
         var trial = {
-  type: jsPsychVideoKeyboardResponse,
-  stimulus: ['https://youtu.be/6v2L2UGZJAM?si=kqqwZpJCxj37oGWt'],
-};
+            type: jsPsychHtmlButtonResponse,
+            stimulus:
+                '<iframe width="420" height="315" src="https://www.youtube.com/embed/6v2L2UGZJAM"></iframe>',
+            choices: ["I have watched the video and I'm ready to continue"],
+        }
+        timeline.push(trial)
 
-        //var bhs_questionnaire = {
+        var bhs_questionnaire = {
             type: jsPsychSurveyMultiChoice,
             questions: [
                 {
@@ -232,143 +219,68 @@
             randomize_choices: true,
         }
 
-       // var rrs_questionnaire = {
+        var rrs_questionnaire = {
             type: jsPsychSurveyLikert,
             questions: [
                 {
                     prompt: "I think about how sad I feel.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about a recent situation, wishing it had gone better or I had handled it better.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about all the things I have to do.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about my feelings of inadequacy.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about how hard it is to concentrate.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about my feelings of loneliness.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about why I feel this way.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about the fact that I can't get the thoughts out of my mind.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about my feelings of fatigue.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about my feelings of worthlessness.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about my problems, analyzing them from every angle.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about how much I dislike myself.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about things that I have done or should have done differently.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about all the things I am doing wrong.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
                 {
                     prompt: "I think about how alone I feel in the world.",
-                    options: [
-                        "Almost never",
-                        "Sometimes",
-                        "Often",
-                        "Almost always",
-                    ],
+                    options: ["Almost never", "Sometimes", "Often", "Almost always"],
                 },
             ],
             preamble:
@@ -376,7 +288,7 @@
             button_label: "Next",
         }
 
-       // var awe_experience_questionnaire = {
+        var awe_experience_questionnaire = {
             type: jsPsychSurveyLikert,
             questions: [
                 {
@@ -745,17 +657,12 @@
             button_label: "Next",
         }
 
-      //  var interoception_questionnaire = {
+        var interoception_questionnaire = {
             type: jsPsychSurveyLikert,
             questions: [
                 {
                     prompt: "I notice when my heart rate increases",
-                    labels: [
-                        "Not at all",
-                        "Slightly",
-                        "Moderately",
-                        "Very much",
-                    ],
+                    labels: ["Not at all", "Slightly", "Moderately", "Very much"],
                 },
             ],
             preamble:
@@ -763,143 +670,68 @@
             button_label: "Next",
         }
 
-       //  var sts_questionnaire = {
+        var sts_questionnaire = {
             type: jsPsychSurveyLikert,
             questions: [
                 {
                     prompt: "Having hobbies or interests I can enjoy",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Accepting myself as I grow older.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Being involved with other people or my community when possible",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Adjusting well to my present life situation.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Adjusting to the changes in my physical ability.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Sharing my wisdom or experience with others.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Finding meaning in my past experiences.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Helping younger people or others in some way.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Having an interest in continuing to learn about things.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Putting aside some things that I once thought were so important.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Accepting death as a part of life.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Finding meaning in my spiritual beliefs.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Letting others help me when I may need it.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Enjoying my pace of life.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
                 {
                     prompt: "Dwelling on my past unmet dreams or goals.",
-                    options: [
-                        "1=Not at all",
-                        "2=Very little",
-                        "3=Somewhat",
-                        "4=Very much",
-                    ],
+                    options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
                 },
             ],
             preamble:
