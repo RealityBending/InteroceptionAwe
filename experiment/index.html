@@ -68,7 +68,7 @@
         //     post_trial_gap: 500,
         // }
 
-        var demographic_questionnaire = {
+        //var demographic_questionnaire = {
             type: jsPsychSurveyMultiChoice,
             data: { screen: "demographic_questions" },
             questions: [
@@ -103,7 +103,12 @@
         }
         timeline.push(demographic_questionnaire)
 
-        var bhs_questionnaire = {
+        var trial = {
+  type: jsPsychVideoKeyboardResponse,
+  stimulus: ['https://youtu.be/6v2L2UGZJAM?si=kqqwZpJCxj37oGWt'],
+};
+
+        //var bhs_questionnaire = {
             type: jsPsychSurveyMultiChoice,
             questions: [
                 {
@@ -227,7 +232,7 @@
             randomize_choices: true,
         }
 
-        var rrs_questionnaire = {
+       // var rrs_questionnaire = {
             type: jsPsychSurveyLikert,
             questions: [
                 {
@@ -371,7 +376,7 @@
             button_label: "Next",
         }
 
-        var awe_experience_questionnaire = {
+       // var awe_experience_questionnaire = {
             type: jsPsychSurveyLikert,
             questions: [
                 {
@@ -740,7 +745,7 @@
             button_label: "Next",
         }
 
-        var interoception_questionnaire = {
+      //  var interoception_questionnaire = {
             type: jsPsychSurveyLikert,
             questions: [
                 {
@@ -758,7 +763,7 @@
             button_label: "Next",
         }
 
-        var sts_questionnaire = {
+       //  var sts_questionnaire = {
             type: jsPsychSurveyLikert,
             questions: [
                 {
