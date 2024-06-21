@@ -1,30 +1,1288 @@
 var demographics_consent = {
     type: jsPsychHtmlButtonResponse,
     stimulus:
-        // Logo and title
-        "<img src='https://blogs.brighton.ac.uk/sussexwrites/files/2019/06/University-of-Sussex-logo-transparent.png' width='150px' align='right'/><br><br><br><br><br>" +
-        "<h1>Informed Consent</h1>" +
-        // Overview
-        "<p align='left'><b>Invitation to Take Part</b><br>" +
-        "You are being invited to take part in a research study to further our understanding of Human psychology. Thank you for carefully reading this information sheet. This study is being conducted by Dr Dominique Makowski from the School of Psychology, University of Sussex, who is happy to be contacted (D.Makowski@sussex.ac.uk) if you have any questions.</p>" +
-        // Description
-        "<p align='left'><b>Why have I been invited and what will I do?</b><br>" +
-        "We are surveying adults to understand how mood fluctuations and mood disorders symptoms (or absence thereof) are expressed and what difficulties they can generate. This study contains various questionnaires about your personality, feelings and current state of mind. The whole experiment will take you <b>about 10 min</b> to complete. Please make you sure that you are in a quiet environment, and that you have time to complete it in one go.</p>" +
-        // Results and personal information
-        "<p align='left'><b>What will happen to the results and my personal information?</b><br>" +
-        "The results of this research may be written into a scientific publication. Your anonymity will be ensured in the way described in the consent information below. Please read this information carefully and then, if you wish to take part, please acknowledge that you have fully understood this sheet, and that you consent to take part in the study as it is described here.</p>" +
-        "<p align='left'><b>Consent</b><br></p>" +
-        // Bullet points
-        "<li align='left'>I understand that by signing below I am agreeing to take part in the University of Sussex research described here, and that I have read and understood this information sheet</li>" +
-        "<li align='left'>I understand that my participation is entirely voluntary, that I can choose not to participate in part or all of the study, and that I can withdraw at any stage by closing the browser without having to give a reason and without being penalised in any way (e.g., if I am a student, my decision whether or not to take part will not affect my grades).</li>" +
-        "<li align='left'>I understand that since the study is anonymous, it will be impossible to withdraw my data once I have completed and submitted the test/questionnaire.</li>" +
-        "<li align='left'>I understand that my personal data will be used for the purposes of this research study and will be handled in accordance with Data Protection legislation. I understand that the University's Privacy Notice provides further information on how the University uses personal data in its research.</li>" +
-        "<li align='left'>I understand that my collected data will be stored in a de-identified way. De-identified data may be made publically available through secured scientific online data repositories.</li>" +
-        // Incentive
-        "<li align='left'>Please note that various checks will be performed to ensure the validity of the data. We reserve the right to withhold credit awards or reimbursement (if applicable) should we detect non-valid responses (e.g., random patterns of answers, instructions not read, ...).</li>" +
-        "<li align='left'>By participating, you agree to follow the instructions and provide honest answers. If you do not wish to participate, simply close your browser.</li>" +
-        "</p>" +
-        "<p align='left'><br><sub><sup>For further information about this research, or if you have any concerns, please contact Dr Dominique Makowski (D.Makowski@sussex.ac.uk). This research has been approved (ER/NAAA21/1) by the ethics board of the School of Psychology. The University of Sussex has insurance in place to cover its legal liabilities in respect of this study.</sup></sub></p>",
-    choices: ["I read, understood, and I consent"],
+         // Logo and title
+         "<img src='https://blogs.brighton.ac.uk/sussexwrites/files/2019/06/University-of-Sussex-logo-transparent.png' width='150px' align='right'/><br><br><br><br><br>" +
+         "<h1>Informed Consent</h1>" +
+         "Welcome to the Nature & Cognition Research" +
+         // Overview
+         "<p align='left'><b>Invitation to Take Part</b><br>" +
+         "You are being invited to take part in a research study to further our understanding of the effects on nature on behaviors, thougths and feelings. Thank you for carefully reading this information sheet. This study is being conducted by Dr Dominique Makowski from the School of Psychology, University of Sussex, who is happy to be contacted (D.Makowski@sussex.ac.uk) if you have any questions.</p>" +
+         // Description
+         "<p align='left'><b>Why have I been invited and what will I do?</b><br>" +
+         "We are surveying people of different age groups to understand how nature and cognition correlate together. This study contains various questionnaires about your personality, feelings and current state of mind. The entire study will take you <b>about 30 min</b> to complete. All data collected in this study are for research purposes only. It is important to the study results that you sit through all the questionnaires of the study. It is particularly important that you pay attention to the short video clips and watch them while wearing <b>Headphones</b>. Please make you sure that you are in a quiet environment, and that you have time to complete it in one go.</p>" +
+         // Results and personal information
+         "<p align='left'><b>What will happen to the results and my personal information?</b><br>" +
+         "The results of this research may be written into a scientific publication. Your anonymity will be ensured in the way described in the consent information below. Please read this information carefully and then, if you wish to take part, please acknowledge that you have fully understood this sheet, and that you consent to take part in the study as it is described here.</p>" +
+         "<p align='left'><b>Consent</b><br></p>" +
+         // Bullet points
+         "<li align='left'>I understand that by signing below I am agreeing to take part in the University of Sussex research described here, and that I have read and understood this information sheet</li>" +
+         "<li align='left'>I understand that my participation is entirely voluntary, that I can choose not to participate in part or all of the study, and that I can withdraw at any stage by closing the browser without having to give a reason and without being penalised in any way (e.g., if I am a student, my decision whether or not to take part will not affect my grades).</li>" +
+         "<li align='left'>I understand that since the study is anonymous, it will be impossible to withdraw my data once I have completed and submitted the test/questionnaire.</li>" +
+         "<li align='left'>I understand that my personal data will be used for the purposes of this research study and will be handled in accordance with Data Protection legislation. I understand that the University's Privacy Notice provides further information on how the University uses personal data in its research.</li>" +
+         "<li align='left'>I understand that my collected data will be stored in a de-identified way. De-identified data may be made publically available through secured scientific online data repositories.</li>" +
+         // Incentive
+         "<li align='left'>Please note that various checks will be performed to ensure the validity of the data. Should we detect non-valid responses (e.g., random patterns of answers, instructions not read, ...), your participation will be excluded.</li>" +
+         "<li align='left'>By participating, you agree to follow the instructions and provide honest answers. If you do not wish to participate, simply close your browser.</li>" +
+         "</p>" +
+         "<p align='left'><br><sub><sup>For further information about this research, or if you have any concerns, please contact Dr Dominique Makowski (D.Makowski@sussex.ac.uk). This research has been approved (ER/NAAA21/1) by the ethics board of the School of Psychology. The University of Sussex has insurance in place to cover its legal liabilities in respect of this study.</sup></sub></p>",
+     choices: ["I read, understood, and I consent"],
     data: { screen: "consent", condition: "Awe" },
+}
+var demographic_questionnaire = {
+    type: jsPsychSurveyMultiChoice,
+    questions: [
+        {
+            prompt: "What is your age?",
+            options: [
+                "Under 18",
+                "18-24",
+                "25-34",
+                "35-44",
+                "45-54",
+                "55-64",
+                "65 or older",
+            ],
+            required: true,
+        },
+        {
+            prompt: "What is your gender?",
+            options: ["Male", "Female", "Other", "Prefer not to say"],
+            required: true,
+        },
+        {
+            prompt: "What is your highest level of education?",
+            options: [
+                "High school or less",
+                "Some college",
+                "Bachelor's degree",
+                "Master's degree",
+                "Doctorate",
+                "Other",
+            ],
+            required: true,
+        },
+    ],
+}
+
+var rrs_questionnaire_long = {
+    type: jsPsychSurveyMultiChoice,
+    questions: [
+        {
+            prompt: "Think about how alone you feel",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think i won't be able to do my job if i don't snap out of this",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think about your feelings of fatigue and achiness",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think about how hard it is to concentrate",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think what am i doing to deserve this?",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think about how passive and unmotivated you feel",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Analyze recent events to try to understand why you are depressed",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think about how you don't seem to feel anything anymore",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think why can't i get going?",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think why do i always react this way?",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Go away by yourself and think about why you feel this way",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Write down what you are thinking and analyze it",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think about a recent situation, wishing it had gone better",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think i won't be able to concentrate if i keep feeling this way",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think why do i have problems other people don't have?",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Please click the option Almost never (1)",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think why can't i handle things better?",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think about how sad you feel",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think about all your shortcomings, failings, faults, mistakes",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think about how you don't feel up to doing anything",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Analyze your personality to try to understand why you are depressed",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Go someplace alone to think about your feelings",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think about how angry you are with yourself",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+    ],
+    preamble:
+        "<p>Instructions for Completing this scale: Please read each statement and indicate how often you experience these thoughts or behaviors when you feel down or upset. Use the following scale to rate your responses: 1. Almost never 2. Sometimes 3. Often 4. Almost always. Select the number that best reflects your typical response. There are no right or wrong answers, so please be as honest as possible.</p>",
+    button_label: "Next",
+    required: true,
+}
+
+var IAS_questionnaire = {
+    type: jsPsychSurveyMultiChoice,
+    questions: [
+        {
+            prompt: "I can always accurately perceive when my heart is beating fast",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I am hungry",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I am breathing fast",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I am thirsty",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I need to urinate",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I need to defecate",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I encounter different tastes",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I am going to vomit",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I am going to sneeze",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I am going to cough",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I am hot/cold",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I am sexually aroused",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Please click the option Agree (4)",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I am going to pass wind",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I am going to burp",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when my muscles are tired/sore",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I am going to get a bruise",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when I am in pain",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when my blood sugar is low",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when someone is touching me affectionately rather than non-affectionately",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when something is going to be ticklish",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I can always accurately perceive when something is going to be itchy",
+            options: [
+                "Disagree Strongly (1)",
+                "Disagree (2)",
+                "Neither agree nor disagree (3)",
+                "Agree (4)",
+                "Strongly Agree (5)",
+            ],
+            required: true,
+        },
+    ],
+    preamble:
+        "<p>Below are several statements regarding how accurately you can perceive specific bodily sensations. Please rate on the scale how well you believe you can perceive each specific signal. For example, if you often feel you need to urinate and then realise you do not need to when you go to the toilet you would rate your accuracy perceiving this bodily signal as low. Please only rate how well you can perceive these signals without using external cues, for example, if you can only perceive how fast your heart is beating when you measure it by taking your pulse this would not count as accurate internal perception.</p>",
+    button_label: "Next",
+    required: true,
+}
+
+var bhs_questionnaire = {
+    type: jsPsychSurveyMultiChoice,
+    questions: [
+        {
+            prompt: "I look forward to the future with hope and enthusiasm.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "I might as well give up because I can't make things better for myself.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "When things are going badly, I am helped by knowing they can't stay that way forever.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "I can't imagine what my life would be like in 10 years.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "I have enough time to accomplish the things I most want to do.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "In the future, I expect to succeed in what concerns me most.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "My future seems dark to me.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "Please click the option FALSE",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "I expect to get more of the good things in life than the average person.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "I just don't get the breaks, and there's no reason to believe I will in the future.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "My past experiences have prepared me well for my future.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "All I can see ahead of me is unpleasantness rather than pleasantness.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "I don't expect to get what I really want.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "When I look ahead to the future, I expect I will be happier than I am now.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "Things just won't work out the way I want them to.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "I have great faith in the future.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "I never get what I want so it's foolish to want anything.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "It is very unlikely that I will get any real satisfaction in the future.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "The future seems vague and uncertain to me",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "I can look forward to more good times than bad times.",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+        {
+            prompt: "There is no use in really trying to get something i want because i probably won't get it",
+            options: ["TRUE", "FALSE"],
+            required: true,
+        },
+    ],
+    preamble:
+        "<p>Instructions for Completing this scale (20 questions): Please read each statement carefully and decide whether it describes how you have been feeling during the past week, including today. Indicate your response by selecting TRUE if the statement describes your feelings or FALSE if it does not. There are no right or wrong answers, so please respond as honestly as possible.</p>",
+    scale_width: 400,
+    button_label: "Next",
+    randomize_question_order: true,
+    randomize_choices: true,
+    required: true,
+}
+
+var rrs_questionnaire_short = {
+    type: jsPsychSurveyMultiChoice,
+    questions: [
+        {
+            prompt: "Think what am i doing to deserve this?",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Analyze recent events to try to understand why you are depressed",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think why do i always react this way?",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Go away by yourself and think about why you feel this way",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Write down what you are thinking and analyze it",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think about a recent situation, wishing it had gone better",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think why do i have problems other people don't have?",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Think why can't i handle things better?",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Analyze your personality to try to understand why you are depressed",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Go someplace alone to think about your feelings",
+            options: [
+                "Almost never (1)",
+                "Sometimes (2)",
+                "Often (3)",
+                "Almost always (4)",
+            ],
+            required: true,
+        },
+    ],
+    preamble: "<p>Please rate how frequently you respond in the following ways.</p>",
+    button_label: "Next",
+    required: true,
+}
+
+var awe_experience_questionnaire = {
+    type: jsPsychSurveyMultiChoice,
+    questions: [
+        {
+            prompt: "I sensed things momentarily slow down.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I noticed time slowing.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt my sense of time change.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I experienced the passage of time differently.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I had the sense that a moment lasted longer than usual.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt that my sense of self was diminished.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt my sense of self shrink.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I experienced a reduced sense of self.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt my sense of self become somehow smaller.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt small compared to everything else.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I had the sense of being connected to everything.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt a sense of communion with all living things.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I experienced a sense of oneness with all things.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt closely connected to humanity.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I had a sense of complete connectedness.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt that I was in the presence of something grand.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I experienced something greater than myself.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt in the presence of greatness.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I perceived something that was much larger than me.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "Please click the option Neutral (4)",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I perceived vastness.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt my jaw drop.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I had goosebumps.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I gasped.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I had chills.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt my eyes widen.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt challenged to mentally process what I was experiencing.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I found it hard to comprehend the experience in full.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I felt challenged to understand the experience.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I struggled to take in all that I was experiencing at once.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+        {
+            prompt: "I tried to understand the magnitude of what I was experiencing.",
+            options: [
+                "Strongly Disagree (1)",
+                "Moderately Disagree (2)",
+                "Somewhat Disagree (3)",
+                "Neutral (4)",
+                "Somewhat Agree (5)",
+                "Moderately Agree (6)",
+                "Strongly Agree (7)",
+            ],
+            required: true,
+        },
+    ],
+    preamble:
+        "<p>Please rate your experience during the videos. Instructions for Completing this scale: Please read each statement carefully and think about how it applies to your experience of the videos. Indicate how much you agree or disagree with each statement based on your experience. Use the following scale to rate your responses: 1: Strongly Disagree 2: Moderately Disagree 3:  Somewhat Disagree 4: Neutral 5: Somewhat Agree 6: Moderately Agree 7: Strongly Agree. Select the number that best reflects your level of agreement with each statement. There are no right or wrong answers, so please be as honest as possible.</p>",
+    button_label: "Next",
+    required: true,
+}
+
+var sts_questionnaire = {
+    type: jsPsychSurveyMultiChoice,
+    questions: [
+        {
+            prompt: "Having hobbies or interests I can enjoy",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Accepting myself as I grow older.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Being involved with other people or my community when possible",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Please click the option 3=Somewhat",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Adjusting well to my present life situation.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Adjusting to the changes in my physical ability.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Sharing my wisdom or experience with others.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Finding meaning in my past experiences.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Helping younger people or others in some way.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Having an interest in continuing to learn about things.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Putting aside some things that I once thought were so important.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Accepting death as a part of life.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Finding meaning in my spiritual beliefs.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Letting others help me when I may need it.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Enjoying my pace of life.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+        {
+            prompt: "Dwelling on my past unmet dreams or goals.",
+            options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
+            required: true,
+        },
+    ],
+    preamble:
+        "<p>Please read each statement carefully and consider how it applies to your experiences, thoughts and feelings. Indicate how much you agree or disagree with each statement based on your personal experiences. Use the following scale to rate your responses: 1: Not at all 2: Very little 3: Somewhat 4: Very much. Select the number that best reflects your level of agreement with each statement. There are no right or wrong answers, so please answer as honestly as possible.</p>",
+    button_label: "Finish",
+    required: true,
 }
