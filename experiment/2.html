@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Nature & Cognition Study</title>
+        <title>Psychology Study</title>
         <script src="https://unpkg.com/jspsych@7.3.4"></script>
         <script src="https://unpkg.com/@jspsych/plugin-html-button-response"></script>
         <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response"></script>
         <script src="https://unpkg.com/@jspsych/plugin-survey-multi-choice"></script>
         <script src="https://unpkg.com/@jspsych/plugin-survey-likert"></script>
+        <script src="https://unpkg.com/@jspsych-contrib/plugin-survey-slider@1.0.0"></script>
         <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe@0.3"></script>
         <script src="questionnaires.js"></script>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <div id="jspsych-target"></div>
@@ -26,19 +27,15 @@
 
         var timeline = []
 
-        
         timeline.push(demographics_consent)
-
-        
-
         timeline.push(demographic_questionnaire)
-
-       
-
         timeline.push(rrs_questionnaire_long)
+        timeline.push(ias_questionnaire)
 
-       
-        timeline.push(IAS_questionnaire)
+        stimuli = jsPsych.randomization.shuffle([
+            "https://www.youtube.com/embed/CizwH_T7pjg",
+            "https://youtube.com/embed/pys47zaxZ90",
+        ]) // Randomize
 
         var video = {
             type: jsPsychHtmlButtonResponse,
@@ -47,15 +44,14 @@
                 0.8 * window.innerWidth +
                 '" height="' +
                 0.8 * window.innerHeight +
-                '" src="https://www.youtube.com/embed/CizwH_T7pjg"></iframe>',
+                '" src=' +
+                stimuli[0] +
+                "></iframe>",
             choices: ["I have watched the video and I'm ready to continue"],
         }
         timeline.push(video)
 
-        
         timeline.push(bhs_questionnaire)
-
-       
         timeline.push(rrs_questionnaire_short)
 
         var video_2 = {
@@ -65,35 +61,35 @@
                 0.8 * window.innerWidth +
                 '" height="' +
                 0.8 * window.innerHeight +
-                '" src="https://youtube.com/embed/pys47zaxZ90"></iframe>',
+                '" src=' +
+                stimuli[1] +
+                "></iframe>",
             choices: ["I have watched the video and I'm ready to continue"],
         }
         timeline.push(video_2)
 
-       
         timeline.push(awe_experience_questionnaire)
-
-       
         timeline.push(sts_questionnaire)
+
+        // Save data via DataPipe
+        timeline.push(demographics_waitdatasaving)
+        timeline.push({
+            type: jsPsychPipe,
+            action: "save",
+            experiment_id: "U7CcBlVwxMiy", // This in generated in the DataPipe interface
+            filename: `${jsPsych.randomization.randomID(10)}.csv`,
+            data_string: () => jsPsych.data.get().csv(),
+        })
 
         var Debriefing = {
             type: jsPsychHtmlButtonResponse,
             stimulus:
-                // Overview
                 "<p align='left'><b>Debriefing of the study</b><br>" +
-                "Thank you for completing the study, we hope that you enjoyed it. The purpose of this study was to see if there is an effect of the feeling of awe on depressive symptoms such as hopelessness and rumination through using videos to induce awe and measuring the effect on the symptoms using different scales such as the Self-Transcendance Scale. This study is being conducted by Dr Dominique Makowski and Faris Al-kadi from the School of Psychology, University of Sussex, who are happy to be contacted (D.Makowski@sussex.ac.uk, fa514@sussex.ac.uk) if you have any questions or need further clarifications about the study.</p>",
-            choices: ["Goodbye, Have a nice day!"],
+                "Thank you for completing the study, we hope that you enjoyed it. The purpose of this study was to see if there is an effect of the feeling of awe on depressive symptoms such as hopelessness and rumination through using videos to induce awe and measuring the effect on the symptoms using different scales such as the Self-Transcendance Scale. This study is being conducted by Dr Dominique Makowski and Faris Al-kadi from the School of Psychology, University of Sussex, who are happy to be contacted (D.Makowski@sussex.ac.uk, fa514@sussex.ac.uk) if you have any questions or need further clarifications about the study." +
+                "<br>You can safely close this tab.</p>",
+            choices: [],
         }
         timeline.push(Debriefing)
-
-        // // Save data via DataPipe
-        // timeline.push({
-        //     type: jsPsychPipe,
-        //     action: "save",
-        //     experiment_id: "U7CcBlVwxMiy", // This in generated in the DataPipe interface
-        //     filename: `${jsPsych.randomization.randomID(10)}.csv`,
-        //     data_string: () => jsPsych.data.get().csv(),
-        // })
 
         jsPsych.run(timeline)
     </script>
