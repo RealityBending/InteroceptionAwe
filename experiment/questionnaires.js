@@ -1,32 +1,32 @@
 var demographics_consent = {
     type: jsPsychHtmlButtonResponse,
     stimulus:
-         // Logo and title
-         "<img src='https://blogs.brighton.ac.uk/sussexwrites/files/2019/06/University-of-Sussex-logo-transparent.png' width='150px' align='right'/><br><br><br><br><br>" +
-         "<h1>Informed Consent</h1>" +
-         "Welcome to the Nature & Cognition Research" +
-         // Overview
-         "<p align='left'><b>Invitation to Take Part</b><br>" +
-         "You are being invited to take part in a research study to further our understanding of the effects on nature on behaviors, thougths and feelings. Thank you for carefully reading this information sheet. This study is being conducted by Dr Dominique Makowski from the School of Psychology, University of Sussex, who is happy to be contacted (D.Makowski@sussex.ac.uk) if you have any questions.</p>" +
-         // Description
-         "<p align='left'><b>Why have I been invited and what will I do?</b><br>" +
-         "We are surveying people of different age groups to understand how nature and cognition correlate together. This study contains various questionnaires about your personality, feelings and current state of mind. The entire study will take you <b>about 30 min</b> to complete. All data collected in this study are for research purposes only. It is important to the study results that you sit through all the questionnaires of the study. It is particularly important that you pay attention to the short video clips and watch them while wearing <b>Headphones</b>. Please make you sure that you are in a quiet environment, and that you have time to complete it in one go.</p>" +
-         // Results and personal information
-         "<p align='left'><b>What will happen to the results and my personal information?</b><br>" +
-         "The results of this research may be written into a scientific publication. Your anonymity will be ensured in the way described in the consent information below. Please read this information carefully and then, if you wish to take part, please acknowledge that you have fully understood this sheet, and that you consent to take part in the study as it is described here.</p>" +
-         "<p align='left'><b>Consent</b><br></p>" +
-         // Bullet points
-         "<li align='left'>I understand that by signing below I am agreeing to take part in the University of Sussex research described here, and that I have read and understood this information sheet</li>" +
-         "<li align='left'>I understand that my participation is entirely voluntary, that I can choose not to participate in part or all of the study, and that I can withdraw at any stage by closing the browser without having to give a reason and without being penalised in any way (e.g., if I am a student, my decision whether or not to take part will not affect my grades).</li>" +
-         "<li align='left'>I understand that since the study is anonymous, it will be impossible to withdraw my data once I have completed and submitted the test/questionnaire.</li>" +
-         "<li align='left'>I understand that my personal data will be used for the purposes of this research study and will be handled in accordance with Data Protection legislation. I understand that the University's Privacy Notice provides further information on how the University uses personal data in its research.</li>" +
-         "<li align='left'>I understand that my collected data will be stored in a de-identified way. De-identified data may be made publically available through secured scientific online data repositories.</li>" +
-         // Incentive
-         "<li align='left'>Please note that various checks will be performed to ensure the validity of the data. Should we detect non-valid responses (e.g., random patterns of answers, instructions not read, ...), your participation will be excluded.</li>" +
-         "<li align='left'>By participating, you agree to follow the instructions and provide honest answers. If you do not wish to participate, simply close your browser.</li>" +
-         "</p>" +
-         "<p align='left'><br><sub><sup>For further information about this research, or if you have any concerns, please contact Dr Dominique Makowski (D.Makowski@sussex.ac.uk). This research has been approved (ER/NAAA21/1) by the ethics board of the School of Psychology. The University of Sussex has insurance in place to cover its legal liabilities in respect of this study.</sup></sub></p>",
-     choices: ["I read, understood, and I consent"],
+        // Logo and title
+        "<img src='https://blogs.brighton.ac.uk/sussexwrites/files/2019/06/University-of-Sussex-logo-transparent.png' width='150px' align='right'/><br><br><br><br><br>" +
+        "<h1>Informed Consent</h1>" +
+        "Welcome to the Nature & Cognition Research" +
+        // Overview
+        "<p align='left'><b>Invitation to Take Part</b><br>" +
+        "You are being invited to take part in a research study to further our understanding of the effects on nature on behaviors, thougths and feelings. Thank you for carefully reading this information sheet. This study is being conducted by Dr Dominique Makowski from the School of Psychology, University of Sussex, who is happy to be contacted (D.Makowski@sussex.ac.uk) if you have any questions.</p>" +
+        // Description
+        "<p align='left'><b>Why have I been invited and what will I do?</b><br>" +
+        "We are surveying people of different age groups to understand how nature and cognition correlate together. This study contains various questionnaires about your personality, feelings and current state of mind. The entire study will take you <b>about 30 min</b> to complete. All data collected in this study are for research purposes only. It is important to the study results that you sit through all the questionnaires of the study. It is particularly important that you pay attention to the short video clips and watch them while wearing <b>Headphones</b>. Please make you sure that you are in a quiet environment, and that you have time to complete it in one go.</p>" +
+        // Results and personal information
+        "<p align='left'><b>What will happen to the results and my personal information?</b><br>" +
+        "The results of this research may be written into a scientific publication. Your anonymity will be ensured in the way described in the consent information below. Please read this information carefully and then, if you wish to take part, please acknowledge that you have fully understood this sheet, and that you consent to take part in the study as it is described here.</p>" +
+        "<p align='left'><b>Consent</b><br></p>" +
+        // Bullet points
+        "<li align='left'>I understand that by signing below I am agreeing to take part in the University of Sussex research described here, and that I have read and understood this information sheet</li>" +
+        "<li align='left'>I understand that my participation is entirely voluntary, that I can choose not to participate in part or all of the study, and that I can withdraw at any stage by closing the browser without having to give a reason and without being penalised in any way (e.g., if I am a student, my decision whether or not to take part will not affect my grades).</li>" +
+        "<li align='left'>I understand that since the study is anonymous, it will be impossible to withdraw my data once I have completed and submitted the test/questionnaire.</li>" +
+        "<li align='left'>I understand that my personal data will be used for the purposes of this research study and will be handled in accordance with Data Protection legislation. I understand that the University's Privacy Notice provides further information on how the University uses personal data in its research.</li>" +
+        "<li align='left'>I understand that my collected data will be stored in a de-identified way. De-identified data may be made publically available through secured scientific online data repositories.</li>" +
+        // Incentive
+        "<li align='left'>Please note that various checks will be performed to ensure the validity of the data. Should we detect non-valid responses (e.g., random patterns of answers, instructions not read, ...), your participation will be excluded.</li>" +
+        "<li align='left'>By participating, you agree to follow the instructions and provide honest answers. If you do not wish to participate, simply close your browser.</li>" +
+        "</p>" +
+        "<p align='left'><br><sub><sup>For further information about this research, or if you have any concerns, please contact Dr Dominique Makowski (D.Makowski@sussex.ac.uk). This research has been approved (ER/NAAA21/1) by the ethics board of the School of Psychology. The University of Sussex has insurance in place to cover its legal liabilities in respect of this study.</sup></sub></p>",
+    choices: ["I read, understood, and I consent"],
     data: { screen: "consent", condition: "Awe" },
 }
 var demographic_questionnaire = {
@@ -34,15 +34,7 @@ var demographic_questionnaire = {
     questions: [
         {
             prompt: "What is your age?",
-            options: [
-                "Under 18",
-                "18-24",
-                "25-34",
-                "35-44",
-                "45-54",
-                "55-64",
-                "65 or older",
-            ],
+            options: ["Under 18", "18-24", "25-34", "35-44", "45-54", "55-64", "65 or older"],
             required: true,
         },
         {
@@ -65,237 +57,130 @@ var demographic_questionnaire = {
     ],
 }
 
+var demographics_waitdatasaving = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus:
+        "<p>Done! now click on 'Continue' and <b>wait until your responses have been successfully saved</b> before closing the tab.</p> ",
+    choices: ["Continue"],
+    data: { screen: "waitdatasaving" },
+}
+
 var rrs_questionnaire_long = {
     type: jsPsychSurveyMultiChoice,
     questions: [
         {
             prompt: "Think about how alone you feel",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think i won't be able to do my job if i don't snap out of this",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think about your feelings of fatigue and achiness",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think about how hard it is to concentrate",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think what am i doing to deserve this?",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think about how passive and unmotivated you feel",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Analyze recent events to try to understand why you are depressed",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think about how you don't seem to feel anything anymore",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think why can't i get going?",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think why do i always react this way?",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Go away by yourself and think about why you feel this way",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Write down what you are thinking and analyze it",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think about a recent situation, wishing it had gone better",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think i won't be able to concentrate if i keep feeling this way",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think why do i have problems other people don't have?",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Please click the option Almost never (1)",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think why can't i handle things better?",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think about how sad you feel",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think about all your shortcomings, failings, faults, mistakes",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think about how you don't feel up to doing anything",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Analyze your personality to try to understand why you are depressed",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Go someplace alone to think about your feelings",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think about how angry you are with yourself",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
     ],
@@ -305,256 +190,84 @@ var rrs_questionnaire_long = {
     required: true,
 }
 
-var IAS_questionnaire = {
-    type: jsPsychSurveyMultiChoice,
-    questions: [
-        {
-            prompt: "I can always accurately perceive when my heart is beating fast",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I am hungry",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I am breathing fast",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I am thirsty",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I need to urinate",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I need to defecate",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I encounter different tastes",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I am going to vomit",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I am going to sneeze",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I am going to cough",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I am hot/cold",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I am sexually aroused",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "Please click the option Agree (4)",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I am going to pass wind",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I am going to burp",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when my muscles are tired/sore",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I am going to get a bruise",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when I am in pain",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when my blood sugar is low",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when someone is touching me affectionately rather than non-affectionately",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when something is going to be ticklish",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-        {
-            prompt: "I can always accurately perceive when something is going to be itchy",
-            options: [
-                "Disagree Strongly (1)",
-                "Disagree (2)",
-                "Neither agree nor disagree (3)",
-                "Agree (4)",
-                "Strongly Agree (5)",
-            ],
-            required: true,
-        },
-    ],
+// IAS questionnaire ========================================================================
+var IAS_items = [
+    "I can always accurately perceive when my heart is beating fast",
+    "I can always accurately perceive when I am hungry",
+    "I can always accurately perceive when I am breathing fast",
+    "I can always accurately perceive when I am thirsty",
+    "I can always accurately perceive when I need to urinate",
+    "I can always accurately perceive when I need to defecate",
+    "I can always accurately perceive when I encounter different tastes",
+    "I can always accurately perceive when I am about to blink", // Attentional check
+    "I can always accurately perceive when I am going to vomit",
+    "I can always accurately perceive when I am going to sneeze",
+    "I can always accurately perceive when I am going to cough",
+    "I can always accurately perceive when I am hot/cold",
+    "I can always accurately perceive when I am sexually aroused",
+    "I can always accurately perceive when I am going to pass wind",
+    "I can always accurately perceive when I am going to burp",
+    "I can always accurately perceive when my muscles are tired/sore",
+    "I can always accurately perceive when I am going to get a bruise",
+    "I can always accurately perceive when I am in pain",
+    "I can always accurately perceive when my blood sugar is low",
+    "I can always accurately perceive when someone is touching me affectionately rather than non-affectionately",
+    "I can always accurately perceive when something is going to be ticklish",
+    "I can always accurately perceive when something is going to be itchy",
+]
+var IAS_dimensions = [
+    "IAS_1",
+    "IAS_2",
+    "IAS_3",
+    "IAS_4",
+    "IAS_5",
+    "IAS_6",
+    "IAS_7",
+    "AttentionCheck_1",
+    "IAS_8",
+    "IAS_9",
+    "IAS_10",
+    "IAS_11",
+    "IAS_12",
+    "IAS_13",
+    "IAS_14",
+    "IAS_15",
+    "IAS_16",
+    "IAS_17",
+    "IAS_18",
+    "IAS_19",
+    "IAS_20",
+    "IAS_21",
+]
+
+var ias_questions = []
+for (const [index, element] of IAS_items.entries()) {
+    ias_questions.push({
+        prompt: "<b>" + element + "</b>",
+        name: IAS_dimensions[index],
+        ticks: ["Strongly Disagree", "Strongly Agree"],
+        required: true,
+        min: 0,
+        max: 1,
+        step: 0.01,
+        slider_start: 0.5,
+    })
+}
+
+var ias_questionnaire = {
+    type: jsPsychSurveySlider,
+    questions: ias_questions,
+    randomize_question_order: true,
     preamble:
-        "<p>Below are several statements regarding how accurately you can perceive specific bodily sensations. Please rate on the scale how well you believe you can perceive each specific signal. For example, if you often feel you need to urinate and then realise you do not need to when you go to the toilet you would rate your accuracy perceiving this bodily signal as low. Please only rate how well you can perceive these signals without using external cues, for example, if you can only perceive how fast your heart is beating when you measure it by taking your pulse this would not count as accurate internal perception.</p>",
-    button_label: "Next",
-    required: true,
+        "<h2>About your body sensations...</h2>" +
+        "<p style='text-align: left;'>Below are several statements regarding how accurately you can perceive specific bodily sensations. Please rate on the scale how well you believe you can perceive each specific signal.</p>" +
+        "<p style='text-align: left;'>For example, if you often feel you need to urinate and then realise you do not need to when you go to the toilet, you would rate your accuracy perceiving this bodily signal as low.</p>" +
+        "<p style='text-align: left;'>Please only rate how well you can perceive these signals without using external cues. For example, if you can only perceive how fast your heart is beating when you measure it by taking your pulse, this would <i>not</i> count as accurate internal perception.</p><br /><br/> ",
+    require_movement: false,
+    slider_width: 400,
+    data: {
+        screen: "questionnaire_ias",
+    },
 }
 
 var bhs_questionnaire = {
@@ -680,102 +393,52 @@ var rrs_questionnaire_short = {
     questions: [
         {
             prompt: "Think what am i doing to deserve this?",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Analyze recent events to try to understand why you are depressed",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think why do i always react this way?",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Go away by yourself and think about why you feel this way",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Write down what you are thinking and analyze it",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think about a recent situation, wishing it had gone better",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think why do i have problems other people don't have?",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Think why can't i handle things better?",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Analyze your personality to try to understand why you are depressed",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
         {
             prompt: "Go someplace alone to think about your feelings",
-            options: [
-                "Almost never (1)",
-                "Sometimes (2)",
-                "Often (3)",
-                "Almost always (4)",
-            ],
+            options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
         },
     ],
