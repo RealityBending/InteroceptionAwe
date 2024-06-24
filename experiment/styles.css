@@ -3,7 +3,7 @@
             /* Body and general styling */
             body {
                 font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-                background-color: #65e2ef;
+                background-color: #64f7f7;
                 margin: 0;
                 padding: 50px;
                 display: grid;
@@ -14,60 +14,69 @@
                 background-size: cover;
             }
 
-.jspsych-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #fff;
-    margin-bottom: 20px;
-}
+            .jspsych-content {
+                background-color: rgba(77, 49, 188, 0.8);
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                padding: 30px;
+                max-width: 600px;
+                text-align: center;
+            }
 
-/* Answer options */
-.jspsych-survey-multi-choice-option {
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #333;
-    border: 2px solid #00bcd4;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-}
+            .jspsych-content p {
+                font-size: 18px;
+                line-height: 1.6;
+                color: #fff;
+                margin-bottom: 20px;
+            }
 
-.jspsych-survey-multi-choice-option:hover {
-    background-color: #555;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1);
-}
+            /* Answer options */
+            .jspsych-survey-multi-choice-option {
+                padding: 15px;
+                border-radius: 8px;
+                background-color: #333;
+                border: 2px solid #00bcd4;
+                color: #fff;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+            }
 
-.jspsych-survey-multi-choice-option:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
-}
+            .jspsych-survey-multi-choice-option:hover {
+                background-color: #555;
+                transform: translateY(-3px);
+                box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1);
+            }
 
-.jspsych-survey-multi-choice-option-selected {
-    background-color: #00bcd4;
-    color: #fff;
-    border-color: #00bcd4;
-    transform: scale(1.05);
-}
+            .jspsych-survey-multi-choice-option:focus {
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+            }
 
-/* Button */
-.jspsych-btn {
-    background-color: #00bcd4;
-    color: #fff;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.2s;
-}
+            .jspsych-survey-multi-choice-option-selected {
+                background-color: #00bcd4;
+                color: #fff;
+                border-color: #00bcd4;
+                transform: scale(1.05);
+            }
 
-.jspsych-btn:hover {
-    background-color: #008ba3;
-    transform: scale(1.1);
-}
+            /* Button */
+            .jspsych-btn {
+                background-color: #00bcd4;
+                color: #fff;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s, transform 0.2s;
+            }
 
-.jspsych-btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
-}
+            .jspsych-btn:hover {
+                background-color: #008ba3;
+                transform: scale(1.1);
+            }
+
+            .jspsych-btn:focus {
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+            }
