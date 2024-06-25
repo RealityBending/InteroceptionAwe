@@ -181,7 +181,7 @@ var demographics_waitdatasaving = {
 }
 
 var rrs_questionnaire_long = {
-    type: jsPsychSurveyLikert,
+    type: jsPsychSurveyMultiChoice,
     questions: [
         {
             prompt: "Think about how alone you feel",
