@@ -32,6 +32,8 @@
 
             /* Answer options */
             .jspsych-survey-multi-choice-option {
+                display: flex;
+                align-items: center;
                 padding: 15px;
                 border-radius: 8px;
                 background-color: #333;
@@ -40,6 +42,19 @@
                 cursor: pointer;
                 transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
             }
+
+            .jspsych-survey-multi-choice-option label {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+
+            .jspsych-survey-multi-choice-option input[type="radio"] {
+                margin-right: 10px;
+            }
+            
 
             .jspsych-survey-multi-choice-option:hover {
                 background-color: #555;
