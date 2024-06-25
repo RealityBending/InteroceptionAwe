@@ -27,7 +27,7 @@ var demographics_consent = {
         "</p>" +
         "<p align='left'><br><sub><sup>For further information about this research, or if you have any concerns, please contact Dr Dominique Makowski (D.Makowski@sussex.ac.uk). This research has been approved (ER/NAAA21/1) by the ethics board of the School of Psychology. The University of Sussex has insurance in place to cover its legal liabilities in respect of this study.</sup></sub></p>",
     choices: ["I read, understood, and I consent"],
-    data: { screen: "consent", condition: "Awe" },
+    data: { screen: "consent" },
 }
 var demographic_questionnaire = {
     type: jsPsychSurvey,
@@ -303,6 +303,7 @@ var rrs_questionnaire_long = {
         "<p>Instructions for Completing this scale: Please read each statement and indicate how often you experience these thoughts or behaviors when you feel down or upset. Use the following scale to rate your responses: 1. Almost never 2. Sometimes 3. Often 4. Almost always. Select the number that best reflects your typical response. There are no right or wrong answers, so please be as honest as possible.</p>",
     button_label: "Next",
     required: true,
+    data: { screen: "questionnaire_rrs" },
 }
 
 // IAS questionnaire ========================================================================

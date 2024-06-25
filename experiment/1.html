@@ -9,13 +9,13 @@
         <script src="https://unpkg.com/@jspsych/plugin-survey-likert"></script>
         <script src="https://unpkg.com/@jspsych-contrib/plugin-survey-slider@1.0.0"></script>
         <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe@0.3"></script>
-        <script src="questionnaires.js"></script>
-        <link rel="stylesheet" href="styles.css" />
         <script src="https://unpkg.com/@jspsych/plugin-survey@1.0.1"></script>
         <link
             rel="stylesheet"
             href="https://unpkg.com/@jspsych/plugin-survey@1.0.1/css/survey.css"
         />
+        <script src="questionnaires.js"></script>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <div id="jspsych-target"></div>
@@ -53,6 +53,7 @@
                 stimuli[0] +
                 "></iframe>",
             choices: ["I have watched the video and I'm ready to continue"],
+            data: { screen: "Stimulus1", item: stimuli[0], condiiton: "Awe" },
         }
         timeline.push(video)
 
@@ -70,6 +71,7 @@
                 stimuli[1] +
                 "></iframe>",
             choices: ["I have watched the video and I'm ready to continue"],
+            data: { screen: "Stimulus2", item: stimuli[1], condiiton: "Awe" },
         }
         timeline.push(video_2)
 
