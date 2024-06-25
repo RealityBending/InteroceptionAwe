@@ -168,7 +168,7 @@ var demographic_questionnaire = {
         ],
     },
     data: {
-        screen: "demographic_questions",
+        screen: "demographic_questionnaire",
     },
 }
 
@@ -303,7 +303,7 @@ var rrs_questionnaire_long = {
         "<p>Instructions for Completing this scale: Please read each statement and indicate how often you experience these thoughts or behaviors when you feel down or upset. Use the following scale to rate your responses: 1. Almost never 2. Sometimes 3. Often 4. Almost always. Select the number that best reflects your typical response. There are no right or wrong answers, so please be as honest as possible.</p>",
     button_label: "Next",
     required: true,
-    data: { screen: "questionnaire_rrs" },
+    data: { screen: "rrs-questionnaire_long" },
 }
 
 // IAS questionnaire ========================================================================
@@ -382,7 +382,7 @@ var ias_questionnaire = {
     require_movement: false,
     slider_width: 400,
     data: {
-        screen: "questionnaire_ias",
+        screen: "ias_questionnaire",
     },
 }
 
@@ -502,6 +502,7 @@ var bhs_questionnaire = {
     randomize_question_order: true,
     randomize_choices: true,
     required: true,
+    data: { screen: "bhs_questionnaire" },
 }
 
 var rrs_questionnaire_short = {
@@ -561,6 +562,7 @@ var rrs_questionnaire_short = {
     preamble: "<p>Please rate how frequently you respond in the following ways.</p>",
     button_label: "Next",
     required: true,
+    data: { screen: "rrs_questionnaire_short" },
 }
 
 var awe_experience_questionnaire = {
@@ -974,6 +976,7 @@ var awe_experience_questionnaire = {
         "<p>Please rate your experience during the videos. Instructions for Completing this scale: Please read each statement carefully and think about how it applies to your experience of the videos. Indicate how much you agree or disagree with each statement based on your experience. Use the following scale to rate your responses: 1: Strongly Disagree 2: Moderately Disagree 3:  Somewhat Disagree 4: Neutral 5: Somewhat Agree 6: Moderately Agree 7: Strongly Agree. Select the number that best reflects your level of agreement with each statement. There are no right or wrong answers, so please be as honest as possible.</p>",
     button_label: "Next",
     required: true,
+    data: { screen: "awe_experience_questionnaire" },
 }
 
 var sts_questionnaire = {
@@ -1064,4 +1067,5 @@ var sts_questionnaire = {
         "<p>Please read each statement carefully and consider how it applies to your experiences, thoughts and feelings. Indicate how much you agree or disagree with each statement based on your personal experiences. Use the following scale to rate your responses: 1: Not at all 2: Very little 3: Somewhat 4: Very much. Select the number that best reflects your level of agreement with each statement. There are no right or wrong answers, so please answer as honestly as possible.</p>",
     button_label: "Finish",
     required: true,
+    data: { screen: "sts_questionnaire" },
 }
