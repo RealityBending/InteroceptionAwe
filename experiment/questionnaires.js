@@ -306,6 +306,32 @@ var rrs_questionnaire_long = {
     data: { screen: "rrs-questionnaire_long" },
 }
 
+var rrs_dimensions = [
+    "rrs_1",
+    "rrs_2",
+    "rrs_3",
+    "rrs_4",
+    "rrs_5",
+    "rrs_6",
+    "rrs_7",
+    "rrs_8",
+    "rrs_9",
+    "rrs_10",
+    "rrs_11",
+    "rrs_12",
+    "rrs_13",
+    "rrs_14",
+    "rrs_15",
+    "AttentionCheck_1",
+    "rrs_16",
+    "rrs_17",
+    "rrs_18",
+    "rrs_19",
+    "rrs_20",
+    "rrs_21",
+    "rrs_22",
+]
+
 // IAS questionnaire ========================================================================
 var IAS_items = [
     "I can always accurately perceive when my heart is beating fast",
@@ -505,6 +531,30 @@ var bhs_questionnaire = {
     data: { screen: "bhs_questionnaire" },
 }
 
+var bhs_dimensions = [
+    "bhs_1",
+    "bhs_2",
+    "bhs_3",
+    "bhs_4",
+    "bhs_5",
+    "bhs_6",
+    "bhs_7",
+    "AttentionCheck_1",
+    "bhs_8",
+    "bhs_9",
+    "bhs_10",
+    "bhs_11",
+    "bhs_12",
+    "bhs_13",
+    "bhs_14",
+    "bhs_15",
+    "bhs_16",
+    "bhs_17",
+    "bhs_18",
+    "bhs_19",
+    "bhs_20",
+]
+
 var rrs_questionnaire_short = {
     type: jsPsychSurveyMultiChoice,
     questions: [
@@ -564,6 +614,19 @@ var rrs_questionnaire_short = {
     required: true,
     data: { screen: "rrs_questionnaire_short" },
 }
+
+var rrss_dimensions = [
+    "rrss_1",
+    "rrss_2",
+    "rrss_3",
+    "rrss_4",
+    "rrss_5",
+    "rrss_6",
+    "rrss_7",
+    "rrss_8",
+    "rrss_9",
+    "rrss_10",
+]
 
 var awe_experience_questionnaire = {
     type: jsPsychSurveyMultiChoice,
@@ -979,6 +1042,40 @@ var awe_experience_questionnaire = {
     data: { screen: "awe_experience_questionnaire" },
 }
 
+var awe_dimensions = [
+    "awe_1",
+    "awe_2",
+    "awe_3",
+    "awe_4",
+    "awe_5",
+    "awe_6",
+    "awe_7",
+    "awe_8",
+    "awe_9",
+    "awe_10",
+    "awe_11",
+    "awe_12",
+    "awe_13",
+    "awe_14",
+    "awe_15",
+    "awe_16",
+    "awe_17",
+    "awe_18",
+    "awe_19",
+    "Attention_Check",
+    "awe_20",
+    "awe_21",
+    "awe_22",
+    "awe_23",
+    "awe_24",
+    "awe_25",
+    "awe_26",
+    "awe_27",
+    "awe_28",
+    "awe_29",
+    "awe_30",
+]
+
 var sts_questionnaire = {
     type: jsPsychSurveyMultiChoice,
     questions: [
@@ -1069,3 +1166,22 @@ var sts_questionnaire = {
     required: true,
     data: { screen: "sts_questionnaire" },
 }
+
+var sts_dimensions = [
+    "sts_1",
+    "sts_2",
+    "sts_3",
+    "Attention_Check",
+    "sts_4",
+    "sts_5",
+    "sts_6",
+    "sts_7",
+    "sts_8",
+    "sts_9",
+    "sts_10",
+    "sts_11",
+    "sts_12",
+    "sts_13",
+    "sts_14",
+    "sts_15",
+]
