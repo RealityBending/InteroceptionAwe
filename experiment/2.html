@@ -9,13 +9,13 @@
         <script src="https://unpkg.com/@jspsych/plugin-survey-likert"></script>
         <script src="https://unpkg.com/@jspsych-contrib/plugin-survey-slider@1.0.0"></script>
         <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe@0.3"></script>
-        <script src="questionnaires.js"></script>
-        <link rel="stylesheet" href="styles.css" />
         <script src="https://unpkg.com/@jspsych/plugin-survey@1.0.1"></script>
         <link
             rel="stylesheet"
             href="https://unpkg.com/@jspsych/plugin-survey@1.0.1/css/survey.css"
         />
+        <script src="questionnaires.js"></script>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <div id="jspsych-target"></div>
@@ -28,6 +28,7 @@
             on_finish: function () {
                 jsPsych.data.displayData("json") // Display data in browser
             },
+            
         })
 
         var timeline = []
