@@ -211,116 +211,139 @@ var rrs_questionnaire_long = {
             prompt: "Think about how alone you feel",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_1",
         },
         {
             prompt: "Think i won't be able to do my job if i don't snap out of this",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_2",
         },
         {
             prompt: "Think about your feelings of fatigue and achiness",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_3",
         },
         {
             prompt: "Think about how hard it is to concentrate",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_4",
         },
         {
             prompt: "Think what am i doing to deserve this?",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_5",
         },
         {
             prompt: "Think about how passive and unmotivated you feel",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_6",
         },
         {
             prompt: "Analyze recent events to try to understand why you are depressed",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_7",
         },
         {
             prompt: "Think about how you don't seem to feel anything anymore",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_8",
         },
         {
             prompt: "Think why can't i get going?",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_9",
         },
         {
             prompt: "Think why do i always react this way?",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_10",
         },
         {
             prompt: "Go away by yourself and think about why you feel this way",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_11",
         },
         {
             prompt: "Write down what you are thinking and analyze it",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_12",
         },
         {
             prompt: "Think about a recent situation, wishing it had gone better",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_13",
         },
         {
             prompt: "Think i won't be able to concentrate if i keep feeling this way",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_14",
         },
         {
             prompt: "Think why do i have problems other people don't have?",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_15",
         },
         {
             prompt: "Please click the option Almost never (1)",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "AttentionCheck_1",
         },
         {
             prompt: "Think why can't i handle things better?",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_16",
         },
         {
             prompt: "Think about how sad you feel",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_17",
         },
         {
             prompt: "Think about all your shortcomings, failings, faults, mistakes",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_18",
         },
         {
             prompt: "Think about how you don't feel up to doing anything",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_19",
         },
         {
             prompt: "Analyze your personality to try to understand why you are depressed",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_20",
         },
         {
             prompt: "Go someplace alone to think about your feelings",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_21",
         },
         {
             prompt: "Think about how angry you are with yourself",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrs_22",
         },
     ],
     preamble:
@@ -329,32 +352,6 @@ var rrs_questionnaire_long = {
     required: true,
     data: { screen: "rrs-questionnaire_long" },
 }
-
-var rrs_dimensions = [
-    "rrs_1",
-    "rrs_2",
-    "rrs_3",
-    "rrs_4",
-    "rrs_5",
-    "rrs_6",
-    "rrs_7",
-    "rrs_8",
-    "rrs_9",
-    "rrs_10",
-    "rrs_11",
-    "rrs_12",
-    "rrs_13",
-    "rrs_14",
-    "rrs_15",
-    "AttentionCheck_1",
-    "rrs_16",
-    "rrs_17",
-    "rrs_18",
-    "rrs_19",
-    "rrs_20",
-    "rrs_21",
-    "rrs_22",
-]
 
 
 
@@ -391,7 +388,7 @@ var IAS_dimensions = [
     "IAS_5",
     "IAS_6",
     "IAS_7",
-    "AttentionCheck_1",
+    "AttentionCheck_2",
     "IAS_8",
     "IAS_9",
     "IAS_10",
@@ -445,106 +442,127 @@ var bhs_questionnaire = {
             prompt: "I look forward to the future with hope and enthusiasm.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_1",
         },
         {
             prompt: "I might as well give up because I can't make things better for myself.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_2",
         },
         {
             prompt: "When things are going badly, I am helped by knowing they can't stay that way forever.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_3",
         },
         {
             prompt: "I can't imagine what my life would be like in 10 years.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_4",
         },
         {
             prompt: "I have enough time to accomplish the things I most want to do.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_5",
         },
         {
             prompt: "In the future, I expect to succeed in what concerns me most.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_6",
         },
         {
             prompt: "My future seems dark to me.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_7",
         },
         {
             prompt: "Please click the option FALSE",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "AttentionCheck_3",
         },
         {
             prompt: "I expect to get more of the good things in life than the average person.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_8",
         },
         {
             prompt: "I just don't get the breaks, and there's no reason to believe I will in the future.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_9",
         },
         {
             prompt: "My past experiences have prepared me well for my future.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_10",
         },
         {
             prompt: "All I can see ahead of me is unpleasantness rather than pleasantness.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_11",
         },
         {
             prompt: "I don't expect to get what I really want.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_12",
         },
         {
             prompt: "When I look ahead to the future, I expect I will be happier than I am now.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_13",
         },
         {
             prompt: "Things just won't work out the way I want them to.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_14",
         },
         {
             prompt: "I have great faith in the future.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_15",
         },
         {
             prompt: "I never get what I want so it's foolish to want anything.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_16",
         },
         {
             prompt: "It is very unlikely that I will get any real satisfaction in the future.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_17",
         },
         {
             prompt: "The future seems vague and uncertain to me",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_18",
         },
         {
             prompt: "I can look forward to more good times than bad times.",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_19",
         },
         {
             prompt: "There is no use in really trying to get something i want because i probably won't get it",
             options: ["TRUE", "FALSE"],
             required: true,
+            name: "bhs_20",
         },
     ],
     preamble:
@@ -557,29 +575,6 @@ var bhs_questionnaire = {
     data: { screen: "bhs_questionnaire" },
 }
 
-var bhs_dimensions = [
-    "bhs_1",
-    "bhs_2",
-    "bhs_3",
-    "bhs_4",
-    "bhs_5",
-    "bhs_6",
-    "bhs_7",
-    "AttentionCheck_1",
-    "bhs_8",
-    "bhs_9",
-    "bhs_10",
-    "bhs_11",
-    "bhs_12",
-    "bhs_13",
-    "bhs_14",
-    "bhs_15",
-    "bhs_16",
-    "bhs_17",
-    "bhs_18",
-    "bhs_19",
-    "bhs_20",
-]
 
 
 var rrs_questionnaire_short = {
@@ -589,51 +584,61 @@ var rrs_questionnaire_short = {
             prompt: "Think what am i doing to deserve this?",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrss_1",
         },
         {
             prompt: "Analyze recent events to try to understand why you are depressed",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrss_2",
         },
         {
             prompt: "Think why do i always react this way?",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrss_3",
         },
         {
             prompt: "Go away by yourself and think about why you feel this way",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrss_4",
         },
         {
             prompt: "Write down what you are thinking and analyze it",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrss_5",
         },
         {
             prompt: "Think about a recent situation, wishing it had gone better",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrss_6",
         },
         {
             prompt: "Think why do i have problems other people don't have?",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrss_7",
         },
         {
             prompt: "Think why can't i handle things better?",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrss_8",
         },
         {
             prompt: "Analyze your personality to try to understand why you are depressed",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrss_9",
         },
         {
             prompt: "Go someplace alone to think about your feelings",
             options: ["Almost never (1)", "Sometimes (2)", "Often (3)", "Almost always (4)"],
             required: true,
+            name: "rrss_10",
         },
     ],
     preamble: "<p>Please rate how frequently you respond in the following ways.</p>",
@@ -642,19 +647,6 @@ var rrs_questionnaire_short = {
     data: { screen: "rrs_questionnaire_short" },
 }
 
-
-var rrss_dimensions = [
-    "rrss_1",
-    "rrss_2",
-    "rrss_3",
-    "rrss_4",
-    "rrss_5",
-    "rrss_6",
-    "rrss_7",
-    "rrss_8",
-    "rrss_9",
-    "rrss_10",
-]
 
 
 var awe_experience_questionnaire = {
@@ -672,6 +664,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_1",
         },
         {
             prompt: "I noticed time slowing.",
@@ -685,6 +678,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_2",
         },
         {
             prompt: "I felt my sense of time change.",
@@ -698,6 +692,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_3",
         },
         {
             prompt: "I experienced the passage of time differently.",
@@ -711,6 +706,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_4",
         },
         {
             prompt: "I had the sense that a moment lasted longer than usual.",
@@ -724,6 +720,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_5",
         },
         {
             prompt: "I felt that my sense of self was diminished.",
@@ -737,6 +734,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_6",
         },
         {
             prompt: "I felt my sense of self shrink.",
@@ -750,6 +748,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_7",
         },
         {
             prompt: "I experienced a reduced sense of self.",
@@ -763,6 +762,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_8",
         },
         {
             prompt: "I felt my sense of self become somehow smaller.",
@@ -776,6 +776,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_9",
         },
         {
             prompt: "I felt small compared to everything else.",
@@ -789,6 +790,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_10",
         },
         {
             prompt: "I had the sense of being connected to everything.",
@@ -802,6 +804,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_11",
         },
         {
             prompt: "I felt a sense of communion with all living things.",
@@ -815,6 +818,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_12",
         },
         {
             prompt: "I experienced a sense of oneness with all things.",
@@ -828,6 +832,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_13",
         },
         {
             prompt: "I felt closely connected to humanity.",
@@ -841,6 +846,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_14",
         },
         {
             prompt: "I had a sense of complete connectedness.",
@@ -854,6 +860,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_15",
         },
         {
             prompt: "I felt that I was in the presence of something grand.",
@@ -867,6 +874,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_16",
         },
         {
             prompt: "I experienced something greater than myself.",
@@ -880,6 +888,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_17",
         },
         {
             prompt: "I felt in the presence of greatness.",
@@ -893,6 +902,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_18",
         },
         {
             prompt: "I perceived something that was much larger than me.",
@@ -906,6 +916,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_19",
         },
         {
             prompt: "Please click the option Neutral (4)",
@@ -919,6 +930,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "AttentionCheck_4",
         },
         {
             prompt: "I perceived vastness.",
@@ -932,6 +944,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_20",
         },
         {
             prompt: "I felt my jaw drop.",
@@ -945,6 +958,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_21",
         },
         {
             prompt: "I had goosebumps.",
@@ -958,6 +972,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_22",
         },
         {
             prompt: "I gasped.",
@@ -971,6 +986,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_23",
         },
         {
             prompt: "I had chills.",
@@ -984,6 +1000,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_24",
         },
         {
             prompt: "I felt my eyes widen.",
@@ -997,6 +1014,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_25",
         },
         {
             prompt: "I felt challenged to mentally process what I was experiencing.",
@@ -1010,6 +1028,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_26",
         },
         {
             prompt: "I found it hard to comprehend the experience in full.",
@@ -1023,6 +1042,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_27",
         },
         {
             prompt: "I felt challenged to understand the experience.",
@@ -1036,6 +1056,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_28",
         },
         {
             prompt: "I struggled to take in all that I was experiencing at once.",
@@ -1049,6 +1070,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_29",
         },
         {
             prompt: "I tried to understand the magnitude of what I was experiencing.",
@@ -1062,6 +1084,7 @@ var awe_experience_questionnaire = {
                 "Strongly Agree (7)",
             ],
             required: true,
+            name: "awe_30",
         },
     ],
     preamble:
@@ -1071,39 +1094,7 @@ var awe_experience_questionnaire = {
     data: { screen: "awe_experience_questionnaire" },
 }
 
-var awe_dimensions = [
-    "awe_1",
-    "awe_2",
-    "awe_3",
-    "awe_4",
-    "awe_5",
-    "awe_6",
-    "awe_7",
-    "awe_8",
-    "awe_9",
-    "awe_10",
-    "awe_11",
-    "awe_12",
-    "awe_13",
-    "awe_14",
-    "awe_15",
-    "awe_16",
-    "awe_17",
-    "awe_18",
-    "awe_19",
-    "Attention_Check",
-    "awe_20",
-    "awe_21",
-    "awe_22",
-    "awe_23",
-    "awe_24",
-    "awe_25",
-    "awe_26",
-    "awe_27",
-    "awe_28",
-    "awe_29",
-    "awe_30",
-]
+
 
 
 
@@ -1114,81 +1105,97 @@ var sts_questionnaire = {
             prompt: "Having hobbies or interests I can enjoy",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_1",
         },
         {
             prompt: "Accepting myself as I grow older.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_2",
         },
         {
             prompt: "Being involved with other people or my community when possible",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_3",
         },
         {
             prompt: "Please click the option 3=Somewhat",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "AttentionCheck_5",
         },
         {
             prompt: "Adjusting well to my present life situation.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_4",
         },
         {
             prompt: "Adjusting to the changes in my physical ability.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_5",
         },
         {
             prompt: "Sharing my wisdom or experience with others.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_6",
         },
         {
             prompt: "Finding meaning in my past experiences.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_7",
         },
         {
             prompt: "Helping younger people or others in some way.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_8",
         },
         {
             prompt: "Having an interest in continuing to learn about things.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_9",
         },
         {
             prompt: "Putting aside some things that I once thought were so important.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_10",
         },
         {
             prompt: "Accepting death as a part of life.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_11",
         },
         {
             prompt: "Finding meaning in my spiritual beliefs.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_12",
         },
         {
             prompt: "Letting others help me when I may need it.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_13",
         },
         {
             prompt: "Enjoying my pace of life.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_14",
         },
         {
             prompt: "Dwelling on my past unmet dreams or goals.",
             options: ["1=Not at all", "2=Very little", "3=Somewhat", "4=Very much"],
             required: true,
+            name: "sts_15",
         },
     ],
     preamble:
@@ -1198,23 +1205,5 @@ var sts_questionnaire = {
     data: { screen: "sts_questionnaire" },
 }
 
-var sts_dimensions = [
-    "sts_1",
-    "sts_2",
-    "sts_3",
-    "Attention_Check",
-    "sts_4",
-    "sts_5",
-    "sts_6",
-    "sts_7",
-    "sts_8",
-    "sts_9",
-    "sts_10",
-    "sts_11",
-    "sts_12",
-    "sts_13",
-    "sts_14",
-    "sts_15",
-]
 
 
